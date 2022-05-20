@@ -29,3 +29,8 @@ def find_pet_by_name(pet_shop, pet_name):
         if pet["name"] == pet_name:
             return pet
     return None
+
+def remove_pet_by_name(pet_shop, pet_name):
+    for index, pet in enumerate(pet_shop["pets"]):
+        if pet["name"] == pet_name:
+            pet_shop["pets"].pop(index)
