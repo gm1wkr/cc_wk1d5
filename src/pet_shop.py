@@ -34,3 +34,8 @@ def remove_pet_by_name(pet_shop, pet_name):
     for index, pet in enumerate(pet_shop["pets"]):
         if pet["name"] == pet_name:
             pet_shop["pets"].pop(index)
+
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_shop["pets"].append(new_pet)
+
+
