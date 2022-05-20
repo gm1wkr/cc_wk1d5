@@ -75,6 +75,7 @@ class TestPetShop(unittest.TestCase):
             "name": "Camelot of Pets"
         }
 #  3A's of testing.  Arrange (setup), Act, Assert
+# git commit
     def test_pet_shop_name(self):
         name = get_pet_shop_name(self.cc_pet_shop)
         self.assertEqual("Camelot of Pets", name)
