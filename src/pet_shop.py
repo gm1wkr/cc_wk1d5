@@ -39,3 +39,6 @@ def add_pet_to_stock(pet_shop, new_pet):
     pet_shop["pets"].append(new_pet)
 
 
+def get_customer_cash(customer_id):
+    return customer_id["cash"]
+
